@@ -1,0 +1,93 @@
+ENG_01;com.allproducts.kizi.eng1;認識ABC
+ENG_02;com.allproducts.kizi.eng2;發音捏捏捏
+ENG_03;com.allproducts.kizi.eng3;書寫ABC
+ENG_04;com.allproducts.kizi.eng4;科學怪人
+ENG_05;com.allproducts.kizi.eng5;快樂家庭;family
+ENG_06;com.allproducts.kizi.eng6;情緒氣泡;mood
+ENG_07;com.allproducts.kizi.eng7;特技滑雪
+ENG_08;com.allproducts.kizi.eng8;彩色撈魚
+ENG_09;com.allproducts.kizi.eng9;形狀靶場
+ENG_10;com.allproducts.kizi.eng10;小小天神
+ENG_11;com.allproducts.kizi.eng11;開車買菜去
+ENG_12;com.allproducts.kizi.eng12;動物攝影
+ENG_13;com.allproducts.kizi.eng13;你要去哪裡;place
+MAT_01;com.allproducts.kizi.mat1;莉莉的衣櫃
+MAT_02;com.allproducts.kizi.mat2;簡易測量
+MAT_03;com.allproducts.kizi.mat3;數數123
+MAT_04;com.allproducts.kizi.mat4;蔬果商店
+MAT_05;com.allproducts.kizi.mat5;數量比較
+MAT_06;com.allproducts.kizi.mat6;餅乾大師
+MAT_07;com.allproducts.kizi.mat7;書寫123
+MAT_08;com.allproducts.kizi.mat8;企鵝遊戲
+MAT_09;com.allproducts.kizi.mat9;形狀拼圖
+MAT_11;com.allproducts.kizi.mat11;冰品天堂
+MAT_12;com.allproducts.kizi.mat12;循環壽司
+SCI_01;com.allproducts.kizi.sci1;協力跳跳板
+SCI_02;com.allproducts.kizi.sci2;青蛙的一生
+SCI_03;com.allproducts.kizi.sci3;美麗的蝴蝶
+SCI_04;com.allproducts.kizi.sci4;地球家族
+SCI_05;com.allproducts.kizi.sci5;鮭魚返鄉
+SCI_06;com.allproducts.kizi.sci6;小水滴的旅程
+SCI_07;com.allproducts.kizi.sci7;恐龍時代
+SCI_08;com.allproducts.kizi.sci8;恐龍大挑戰
+SCI_09;com.allproducts.kizi.sci9;球的冒險
+SCI_10;com.allproducts.kizi.sci10;快樂的農夫;farm
+LIF_01;com.allproducts.kizi.lif1;我的一天;myday
+LIF_02;com.allproducts.kizi.lif2;人體實驗室
+SOC_01;com.allproducts.kizi.soc1;地球探險
+SOC_02;com.allproducts.kizi.soc2;大家過馬路;traffic
+SUR_01;com.allproducts.kizi.sur1;自閉症篩檢6
+SUR_02;com.allproducts.kizi.sur2;共同注意力篩檢2
+SUR_03;com.allproducts.kizi.sur3;兒童活動量表3
+SE_01;com.allproducts.kizi.se1;聲音修理站
+SE_02;com.allproducts.kizi.se2;玩具工廠;toy
+SB_01;com.allproducts.kizi.sb1;三隻小豬
+SB_02;com.allproducts.kizi.sb2;國王的新衣
+SB_03;com.allproducts.kizi.sb3;龜兔賽跑
+SB_04;com.allproducts.kizi.sb4;北風與太陽
+SB_05;com.allproducts.kizi.sb5;小紅帽
+SB_06;com.allproducts.kizi.sb6;醜小鴨
+SB_07;com.allproducts.kizi.sb7;青蛙王子
+SB_08;com.allproducts.kizi.sb8;小人國遊記
+SB_09;com.allproducts.kizi.sb9;十二生肖的故事
+SB_10;com.allproducts.kizi.sb10;瞎子摸象
+CS_01;com.allproducts.kizi.cs1;Old MacDonald Had a Farm
+CS_02;com.allproducts.kizi.cs2;Head and Shoulders, Knees and Toes
+CS_03;com.allproducts.kizi.cs3;Indian Boys
+CS_04;com.allproducts.kizi.cs4;Row, Row, Row Your Boat
+CS_05;com.allproducts.kizi.cs5;A Sailor
+CS_06;com.allproducts.kizi.cs6;I’m a Little Teapot
+CS_07;com.allproducts.kizi.cs7;London Bridge
+CS_08;com.allproducts.kizi.cs8;Shoo Fly
+CS_09;com.allproducts.kizi.cs9;ABC
+CS_10;com.allproducts.kizi.cs10;Wheels On The Bus
+CS_11;com.allproducts.kizi.cs11;Are you sleeping
+CS_12;com.allproducts.kizi.cs12;Twinkle Twinkle Little Star
+CS_13;com.allproducts.kizi.cs13;Five Little Monkeys(Rap)
+CS_14;com.allproducts.kizi.cs14;She’ll Be Coming Round the Mountain
+CS_15;com.allproducts.kizi.cs15;If you’re Happy and You Know It
+CS_16;com.allproducts.kizi.cs16;Happy Birthday
+CS_17;com.allproducts.kizi.cs17;王老先生有塊地;mcdonald
+CS_18;com.allproducts.kizi.cs18;當我們同在一起
+CS_19;com.allproducts.kizi.cs19;倫敦鐵橋
+CS_20;com.allproducts.kizi.cs20;蝴蝶
+CS_21;com.allproducts.kizi.cs21;紫竹調
+CS_22;com.allproducts.kizi.cs22;哈巴狗
+CS_23;com.allproducts.kizi.cs23;我是隻小小鳥
+CS_24;com.allproducts.kizi.cs24;我的朋友在哪裡
+CS_25;com.allproducts.kizi.cs25;跳舞歌
+CS_26;com.allproducts.kizi.cs26;大象
+CS_27;com.allproducts.kizi.cs27;小星星
+CS_28;com.allproducts.kizi.cs28;世界小小小
+CS_29;com.allproducts.kizi.cs29;數數123
+CS_30;com.allproducts.kizi.cs30;生日快樂
+
+KIT_1;com.allproducts.kizi.kit1;我的繪本;paint
+SCI_11;com.allproducts.kizi.sci11;造飛車;car
+SCI_12;com.allproducts.kizi.sci12;光影探險家;lighting
+MAT_10;com.allproducts.kizi.mat10;形體通道
+ENG_14;com.allproducts.kizi.eng14;快樂生活;Eng_14
+MAT_21;com.allproducts.kizi.mat21;踏石迷宮
+ENG_21;com.allproducts.kizi.eng21;搬家公司
+MAT_14;com.allproducts.kizi.mat14;認識時間;clock
+

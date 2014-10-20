@@ -12,16 +12,21 @@ public class PlaneTarget : MonoBehaviour {
 
     public void Update()
     {
-        UpdateDirection();
+        //UpdateDirection(
+        //        AccelerationController.GetAxisH, 
+        //        AccelerationController.GetAxisV);
+        UpdateDirection(
+                Input.GetAxis("Horizontal"), 
+                Input.GetAxis("Vertical"));
         UpdateRotation();
         UpdatePlane();
     }
 
-    private void UpdateDirection()
+    private void UpdateDirection(float h, float v)
     {
         velocity = Vector2.ClampMagnitude(new Vector2(
-                velocity.x + -Input.GetAxis("Horizontal") * agility,
-                velocity.y + Input.GetAxis("Vertical") * agility), maxSpeed);
+                velocity.x + -h * agility,
+                velocity.y + v * agility), maxSpeed);
         CheckLimit();
     }
 
