@@ -253,7 +253,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 3
   m_Type: 1
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: .962677479, b: .661764741, a: 1}
   m_Intensity: .5
   m_Range: 10
   m_SpotAngle: 30
@@ -648,7 +648,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c979d7e3ebaaa3f438876a96726810b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: .150519028, g: .255103767, b: .639705896, a: 1}
+  color: {r: .963235319, g: 0, b: 0, a: 1}
 --- !u!1 &1207886760
 GameObject:
   m_ObjectHideFlags: 0
@@ -849,7 +849,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c979d7e3ebaaa3f438876a96726810b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: .150519028, g: .255103767, b: .639705896, a: 1}
+  color: {r: .963235319, g: 0, b: 0, a: 1}
 --- !u!23 &1374775226
 Renderer:
   m_ObjectHideFlags: 0
@@ -936,7 +936,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: c427aafbd9069ca4496865cf54b60b69, type: 2}
+  - {fileID: 2100000, guid: d79b6ba647a11e349954adc6963af9f5, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -1076,7 +1076,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c979d7e3ebaaa3f438876a96726810b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: .150519028, g: .255103767, b: .639705896, a: 1}
+  color: {r: .963235319, g: 0, b: 0, a: 1}
 --- !u!1 &1622413196
 GameObject:
   m_ObjectHideFlags: 0
@@ -1135,7 +1135,7 @@ Camera:
     height: 1
   near clip plane: .300000012
   far clip plane: 1000
-  field of view: 60
+  field of view: 19
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -1156,7 +1156,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1622413196}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -65}
+  m_LocalPosition: {x: 0, y: 0, z: -93.6999969}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2116427958}
@@ -1533,4 +1533,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c979d7e3ebaaa3f438876a96726810b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color: {r: .150519028, g: .255103767, b: .639705896, a: 1}
+  color: {r: .963235319, g: 0, b: 0, a: 1}
