@@ -25,28 +25,6 @@ public class PlaneTarget : MonoBehaviour {
         CheckLimit();
     }
 
-    private void UpdateRotation()
-    {
-        Transform coreTransform = transform.parent;
-        float longitude = coreTransform.eulerAngles.x;
-        float radiusAtLongitude = 
-                earthRadius * Mathf.Cos(Mathf.Abs(
-                longitude * Mathf.Deg2Rad));
-        float circumferenceAtLongitude = 
-                2 * radiusAtLongitude * Mathf.PI;
-        float HorizontalDistancePerDegree = 
-                circumferenceAtLongitude / 360f;
-        //Debug.Log(string.Format("longitude: {0}, current radius: {1}", 
-        //    longitude, radiusAtLongitude));
-        float circumference = 2 * earthRadius * Mathf.PI;
-        float VerticalDistancePerDegree = circumference / 360f;
-
-        rx += velocity.y / VerticalDistancePerDegree * Time.deltaTime;
-        ry += velocity.x / HorizontalDistancePerDegree *  
-                Time.deltaTime;
-        coreTransform.rotation = Quaternion.Euler(rx, ry, 0);
-    }
-
     private void CheckLimit()
     {
         Transform coreTransform = transform.parent;
@@ -57,6 +35,32 @@ public class PlaneTarget : MonoBehaviour {
         {
             velocity = new Vector2(velocity.x, -velocity.y);
         }
+    }
+
+    private void UpdateRotation()
+    {
+        rx += velocity.y / GetVerticalDistancePerDegree() * Time.deltaTime;
+        ry += velocity.x / GetHorizontalDistancePerDegree() * Time.deltaTime;
+        Transform coreTransform = transform.parent;
+        coreTransform.rotation = Quaternion.Euler(rx, ry, 0);
+    }
+
+    private float GetVerticalDistancePerDegree()
+    {
+        float circumference = 2 * earthRadius * Mathf.PI;
+        return circumference / 360f;
+    }
+
+    private float GetHorizontalDistancePerDegree()
+    {
+        Transform coreTransform = transform.parent;
+        float longitude = coreTransform.eulerAngles.x;
+        float radiusAtLongitude = 
+                earthRadius * Mathf.Cos(Mathf.Abs(
+                longitude * Mathf.Deg2Rad));
+        float circumferenceAtLongitude = 
+                2 * radiusAtLongitude * Mathf.PI;
+        return circumferenceAtLongitude / 360f;
     }
 
     private void UpdatePlane()
