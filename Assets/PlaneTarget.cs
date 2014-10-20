@@ -15,7 +15,6 @@ public class PlaneTarget : MonoBehaviour {
         UpdateDirection();
         UpdateRotation();
         UpdatePlane();
-        //DebugRay(coreTransform);
     }
 
     private void UpdateDirection()
