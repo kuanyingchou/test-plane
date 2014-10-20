@@ -5,19 +5,23 @@ public class PlaneTarget : MonoBehaviour {
     public Vector2 velocity = new Vector2(1, 1);
     public float agility = 5;
     public float maxSpeed = 20;
-    public Transform plane;
+    public Plane plane;
     public float earthRadius = 50;
-    public float longitudeLimit = 60;
+    public float latitudeLimit = 60;
     private float rx, ry;
+    private float aptitude = 60;
 
     public void Update()
     {
-        //UpdateDirection(
-        //        AccelerationController.GetAxisH, 
-        //        AccelerationController.GetAxisV);
+        #if UNITY_ANDROID && !UNITY_EDITOR
+        UpdateDirection(
+                AccelerationController.GetAxisH, 
+                AccelerationController.GetAxisV);
+        #else
         UpdateDirection(
                 Input.GetAxis("Horizontal"), 
                 Input.GetAxis("Vertical"));
+        #endif
         UpdateRotation();
         UpdatePlane();
     }
@@ -34,7 +38,7 @@ public class PlaneTarget : MonoBehaviour {
     {
         Transform coreTransform = transform.parent;
         float x = coreTransform.eulerAngles.x;
-        float a = longitudeLimit;
+        float a = latitudeLimit;
         if(x > 180) x = x - 360; 
         if(x > a || x < -a)
         {
@@ -59,22 +63,18 @@ public class PlaneTarget : MonoBehaviour {
     private float GetHorizontalDistancePerDegree()
     {
         Transform coreTransform = transform.parent;
-        float longitude = coreTransform.eulerAngles.x;
-        float radiusAtLongitude = 
+        float latitude = coreTransform.eulerAngles.x;
+        float radiusAtLatitude = 
                 earthRadius * Mathf.Cos(Mathf.Abs(
-                longitude * Mathf.Deg2Rad));
-        float circumferenceAtLongitude = 
-                2 * radiusAtLongitude * Mathf.PI;
-        return circumferenceAtLongitude / 360f;
+                latitude * Mathf.Deg2Rad));
+        float circumferenceAtLatitude = 
+                2 * radiusAtLatitude * Mathf.PI;
+        return circumferenceAtLatitude / 360f;
     }
 
     private void UpdatePlane()
     {
-        plane.LookAt(
-                transform.position, 
-                plane.position - transform.parent.position);
-        plane.position = transform.position;
-        //Debug.DrawRay(transform.position, target.parent.position - transform.position, Color.green, 5);
+        plane.Follow(transform.position, transform.parent.position);
     }
 
     private void DebugRay(Transform coreTransform)
