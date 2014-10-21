@@ -2,13 +2,16 @@
 using System.Collections;
 
 public class Plane : MonoBehaviour {
-    private bool isFiring = false;
     private Vector3 velocity = Vector3.zero;
+    private Vector3 center = Vector3.zero;
+    public bool traceRallyPoint = false;
+
+    //[ weapon
+    private bool isFiring = false;
     private bool isLeftGun = false;
     public float fireInterval = .05f;
     public float warmUp = .1f;
     public float bulletSpeed = .1f;
-    private Vector3 center = Vector3.zero;
 
     public IEnumerator Start()
     {
@@ -35,6 +38,7 @@ public class Plane : MonoBehaviour {
         {
             if(isFiring) StopFiring();
         }
+
     }
 
     public void Follow(Vector3 target, Vector3 center)
